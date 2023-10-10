@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Teacher's Day! Maam diana!!</title>
+	
+</head>
+<body>
+	<h1>HAPPY Teacher'S DAY MAAM DIANA!</h1>
+	<button onclick="showMessage()">Click me!</button>
+	<script>
+		function showMessage() {
+			var message = "Happy Teacher's Day! Thank you for being an amazing teacher!";
+			var img_path = "Maam diana.png" ;
+			var img = new Image();
+			img.src = img_path;
+			img.alt = "";
+			img.width = 300;
+			
+			document.body.appendChild(img);
+			document.body.innerHTML += "<p>" + message + "</p>";
+		}
+	</script>
+</body>
+</html>
